@@ -6,7 +6,7 @@
     <title>Testando servidores</title>
 </head>
 <body>
-    <h1>Testando comando de servidores</h1>
+    <h1>Exemplo de PHP</h1>
 
     <?php 
         date_default_timezone_set("America/Sao_Paulo");

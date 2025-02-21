@@ -25,9 +25,17 @@
         //
        // echo "Muito prazer, $nome $sobrenome! você mora no " . PAIS; 
 
-       $nome = "Joao";
+       //$nome = "Joao";
 
-       echo"É verdade que seu nome é $nome?";
+       //echo"É verdade que seu nome é $nome?";
+
+      // $salario = 2500;
+
+       //echo "Seu salário é de R$$salario";
+
+       const _JB = 1993;
+
+       echo "Simplesmente é isso mesmo " . _JB;
 
     ?>
 

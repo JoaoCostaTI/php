@@ -33,9 +33,12 @@
 
        //echo "Seu salário é de R$$salario";
 
+       $nomeJM = false;
+
        const _JB = 1993;
 
-       echo "Simplesmente é isso mesmo " . _JB;
+       echo "Simplesmente é isso mesmo $nomeJM +++ " . _JB;
+
 
     ?>
 

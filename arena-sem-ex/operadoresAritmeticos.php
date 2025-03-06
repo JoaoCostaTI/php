@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arena</title>
+    <title>Operadores</title>
 </head>
 <body>
     <?php 
+        // + - * / % **
 
-        // Ordem de precedencia
-        $resultado = 5 + 2 / 2;
-
-        echo "O resultado é: $resultado";
+        $r = 50 / 2 + 3 ** 2;
+        echo "O Resultado é: $r";
+        
     ?>
 </body>
 </html>

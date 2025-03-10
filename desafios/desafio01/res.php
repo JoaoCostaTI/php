@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Desafio PHP 01</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -19,11 +19,11 @@
             echo
                 "
                 O número escolhido foi: $numero  <br>
-                O seu antecessor é: $antecessor <br>
-                O seu sucessor é: $sucessor
+                O seu <em>antecessor</em> é: $antecessor <br>
+                O seu <em>sucessor</em> é: $sucessor
                  ";
         ?>
-        <p><a href="javascript:history.go(-1)">Voltar</a></p>
+        <button onclick="javascript:history.go(-1)">&#x2b05; Voltar</button>
     </main>
 </body>
 </html>

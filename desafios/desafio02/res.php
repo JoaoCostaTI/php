@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Numeros aleatórios</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,20 +13,20 @@
     <main>
         
         <?php 
+            $min = 0;
+            $max = 100;
 
-            $valor = random_int(0,100);
+            $valor = mt_rand($min,$max);
 
             echo"
-                Gerando um número aleatório entre 0 a 100...
+                Gerando um número aleatório entre $min a $max...
                 <br>
                 O número gerado foi: <strong>$valor</strong>
             ";
 
         ?>
 
-        <form action="res.php" method="get">    
-            <input type="submit" value="Gerar Valor">
-        </form>
+        <button onclick="javascript:document.location.reload()"> Gerar Outro</button>
         
     </main>
 </body>

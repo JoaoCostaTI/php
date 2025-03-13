@@ -36,7 +36,6 @@
 
         <?php 
             $soma = $n1 + $n2;
-
             echo"<p>O resultado é: $soma</p>";
         ?>
     </section>

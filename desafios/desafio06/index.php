@@ -14,10 +14,9 @@
         $resto = $dividendo % $divisor;
     ?>
 
-
     <main>
         <h1>Anatomia de uma Divisão</h1>
-        <form action="./index.php" method="get">
+        <form action="<?= $_SERVER['PHP_SELF']?>" method="get">
             <label for="dividendo">Dividendo</label>
             <input type="number" name="dividendo" id="dividendo" value="<?=$dividendo?>">
 
@@ -35,7 +34,6 @@
             echo"Divisor = $divisor <br>";
             echo"Resultado = $resultado<br>";
             echo"Resto = $resto";
-
         ?>
     </section>
 </body>

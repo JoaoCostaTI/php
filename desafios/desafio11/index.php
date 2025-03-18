@@ -34,7 +34,7 @@
         $precoFinalF = number_format($precoFinal, 2,",","");
 
         echo"<h1>Resultado do Reajuste</h1>";
-        echo"O produto que custava R$$produto, com <strong>$reajuste% de aumento</strong> vai passar a custar <strong>R$$$precoFinal</strong> a partir de agora.";
+        echo"O produto que custava R$$produto, com <strong>$reajuste% de aumento</strong> vai passar a custar <strong>R$$precoFinal</strong> a partir de agora.";
     ?>
     </section>
 </body>

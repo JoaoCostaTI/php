@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-BR">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,15 +8,13 @@
 </head>
 <body>
     <?php 
-        $dividendo = $_GET["dividendo"];
-        $divisor = $_GET["divisor"];
-        $resultado = floor($dividendo / $divisor);
-        $resto = $dividendo % $divisor;
+        $dividendo = $_GET["dividendo"] ?? 0;
+        $divisor = $_GET["divisor"]?? 0; 
     ?>
 
     <main>
         <h1>Anatomia de uma Divisão</h1>
-        <form action="<?= $_SERVER['PHP_SELF']?>" method="get">
+        <form action="index.php" method="get">
             <label for="dividendo">Dividendo</label>
             <input type="number" name="dividendo" id="dividendo" value="<?=$dividendo?>">
 
@@ -29,6 +27,8 @@
 
     <section>
         <?php
+            $resultado = floor($dividendo / $divisor);
+            $resto = $dividendo % $divisor;
             echo"Estrutura da divisão<br>";
             echo"Dividendo = $dividendo<br>";
             echo"Divisor = $divisor <br>";
